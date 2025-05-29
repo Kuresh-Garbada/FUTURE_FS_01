@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased`}
-      >
+    className={`${ovo.variable} font-ovo`}>
+     
         {children}
       </body>
     </html>
