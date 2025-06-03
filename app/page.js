@@ -6,9 +6,7 @@ import About from "@/components/About";
 export default function Home() {
   return (
     <>
-    <p>
-      helloo
-    </p>
+     h3
      <Navbar />
      <Header/>
      <About/>
