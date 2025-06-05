@@ -10,7 +10,16 @@ export default {
         outfit: ["var(--font-outfit)"],
         ovo: ["var(--font-ovo)"],
       },
+      
+       gridTemplateColumns: {
+  
+  'auto-fit': 'repeat(auto-fit, minmax(200x, 1fr))',
+}
+
+
+      }
+
     },
-  },
+ 
   plugins: [],
 }
