@@ -35,7 +35,7 @@ const Contact = () => {
         Connect With Me
       </h3>
       <h2 className="text-center text-5xl font-ovo font-semibold mb-12 text-gray-900 dark:text-gray-100">
-         Get in trouch
+         Get in touch
       </h2>
        <p className="text-justify max-w-2xl mx-auto mt-5 mb-12 font-ovo">
          I 'd love to hear from you ! if you have any questions, comments, or feedback,
