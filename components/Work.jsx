@@ -4,15 +4,15 @@ import React from 'react';
 
 const Work = () => {
   return (
-    <div id="work" className="w-full px-[12%] py-16 scroll-mt-20">
+    <div id="work" className="w-full px-[12%] pt-16 pb-8 scroll-mt-20">
       <h3 className="text-center mb-2 text-1xl font-ovo uppercase tracking-widest text-indigo-600">
         My Portfolio
       </h3>
-      <h2 className="text-center text-5xl sm:text-6xl font-ovo font-semibold mb-12 text-gray-900 dark:text-gray-100">
+      <h2 className="text-center text-5xl sm:text-6xl font-ovo font-semibold mb-10 text-gray-900 dark:text-gray-100">
         My Latest Work
       </h2>
 
-      <p className="text-justify max-w-2xl mx-auto mt-4 mb-12 font-ovo text-gray-700 dark:text-gray-300 leading-relaxed">
+      <p className="text-justify max-w-2xl mx-auto mt-4 mb-10 font-ovo text-gray-700 dark:text-gray-300 leading-relaxed">
         Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
       </p>
 
@@ -53,7 +53,7 @@ const Work = () => {
       {/* <a
         href="#"
         className="w-max flex items-center justify-center gap-2 text-gray-700 dark:text-gray-300 
-        border border-gray-500 rounded-full py-3 px-10 mx-auto mt-16 hover:bg-blue-100 dark:hover:bg-blue-900 transition"
+        border border-gray-500 rounded-full py-3 px-10 mx-auto mt-12 hover:bg-blue-100 dark:hover:bg-blue-900 transition"
       >
         Show more
         <Image src={assets.right_arrow_bold} alt="Right arrow" className="w-4" />

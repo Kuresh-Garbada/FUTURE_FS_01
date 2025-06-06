@@ -7,17 +7,23 @@ const Header = () => {
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-24">
       
       {/* Profile Image */}
-      <div className="mb-4 rounded-full w-38 h-45 overflow-hidden border-4 border-black shadow-lg">
-        <Image
-          src={assets.profile_img}
-          alt="Profile"
-          className="w-full h-full object-cover"
-        />
-      </div>
+<div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-black-600 dark:border-white shadow-md mx-auto">
+  <Image
+    src={assets.profile_img}
+    alt="Profile"
+    width={176}
+    height={176}
+    quality={100}
+    priority
+    className="w-full h-full object-cover object-top"
+  />
+</div>
+
+
 
       {/* Intro Text */}
       <div className="mb-4">
-        <h3 className="flex items-end justify-center gap-2 text-xl md:text-2xl mb-3 font-ovo text-gray-800">
+        <h3 className="flex items-end justify-center gap-2 text-xl md:text-2xl mb-3 font-ovo text-blue-800">
           Hi! I'm Kuresh Garbada
           <Image src={assets.hand_icon} alt="Wave" className="w-6 h-6" />
         </h3>
