@@ -7,15 +7,14 @@ const Header = () => {
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-24">
       
       {/* Profile Image */}
-<div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-black-600 dark:border-white shadow-md mx-auto">
+<div className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-black dark:border-white shadow-lg mx-auto">
   <Image
     src={assets.profile_img}
     alt="Profile"
     width={176}
     height={176}
-    quality={100}
-    priority
     className="w-full h-full object-cover object-top"
+    priority
   />
 </div>
 
