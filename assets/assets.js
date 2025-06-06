@@ -83,8 +83,8 @@ export const workData = [
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Apni Ricksha ',
+        description: 'Mobile Web',
         bgImage: '/work-2.png',
     },
     {
@@ -93,8 +93,8 @@ export const workData = [
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Chess Game',
+        description: 'Java Project',
         bgImage: '/work-4.png',
     },
 ]

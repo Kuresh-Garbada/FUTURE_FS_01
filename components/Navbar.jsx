@@ -8,7 +8,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('top')
   const sideMenuRef = useRef()
 
-  // Scroll listener for shadow and active section
   useEffect(() => {
     const onScroll = () => {
       setIsScroll(window.scrollY > 50)
@@ -28,7 +27,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // On mount, check if user prefers dark mode or saved theme
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme')
     if (
@@ -63,10 +61,9 @@ const Navbar = () => {
     sideMenuRef.current.style.transform = 'translateX(16rem)'
   }
 
-  // Function to conditionally add active styles
   const getLinkClass = (section) =>
-    `font-ovo font-medium ${
-      activeSection === section ? 'text-blue-600 underline' : ''
+    `font-outfit font-medium transition duration-300 ${
+      activeSection === section ? 'text-blue-600 underline' : 'text-gray-700'
     }`
 
   return (
@@ -78,10 +75,10 @@ const Navbar = () => {
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
        flex items-center justify-between z-50 ${
-         isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm ' : ' '
+         isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ''
        }`}
       >
-        <p className='custom-text'>KURESH</p>
+        <p className='font-ovo text-2xl tracking-wider text-[#0449df]'>KURESH</p>
 
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3
@@ -115,7 +112,6 @@ const Navbar = () => {
         </ul>
 
         <div className='flex items-center gap-4'>
-          {/* Dark Mode Toggle Button */}
           <button onClick={toggleDarkMode} aria-label='Toggle Dark Mode'>
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
@@ -125,7 +121,7 @@ const Navbar = () => {
           </button>
 
           <a
-            className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo font-medium'
+            className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-outfit font-semibold text-sm tracking-wide hover:bg-gray-100 transition'
             href='#contact'
           >
             Contact <Image src={assets.arrow_icon} className='w-3' alt='' />
